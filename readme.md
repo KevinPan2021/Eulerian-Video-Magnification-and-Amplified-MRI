@@ -1,6 +1,6 @@
 # Motion Amplification and Amplified MRI
 
-
+![Baby](external/baby_output_alpha_c30_lambda_c16_fl0.4_fh3.gif)
 ![AMRI](external/brain_MRI_alpha_c400_lambda_c125_fl0.6_fh1.8.gif)
 
 ### Dataset:
