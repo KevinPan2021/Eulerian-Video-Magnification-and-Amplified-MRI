@@ -16,13 +16,13 @@ def mp4read(input_video):
         ret, frame = cap.read()
         if not ret:
             break
-        frames.append(frame)
+        frames.append(frame[...,0])
     
     cap.release()
     input_data = np.array(frames, dtype=np.uint8)
-    
+
     # only keep 1 channel for grayscale
-    input_data = input_data[...,0]
+    input_data = input_data
     return input_data
 
 
@@ -186,10 +186,11 @@ class AMRI():
     
     
 def main():
-    
     # alpha, lambda_c, fl, fh, samplingRate
-    AMRI('data\\brain_MRI.mp4', 'output\\brain_MRI', 200, 100, 0.6, 1.8, 60).run()
-    
+
+    # original paper uses alpha, lambda_c = 200, 200
+    # filter 0.01-0.03 hz
+    AMRI('data\\brain_MRI.mp4', 'output\\brain_MRI', 400, 125, 0.6, 1.8, 60).run()
     
 if __name__ == '__main__':
     main()
