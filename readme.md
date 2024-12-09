@@ -1,7 +1,7 @@
 # Motion Amplification and Amplified MRI
 
 
-![AMRI](external/AMRI.png)
+![AMRI](external/brain_MRI_alpha_c400_lambda_c125_fl0.6_fh1.8.mp4)
 
 ### Dataset:
 [Baby & Subway](https://people.csail.mit.edu/mrub/evm/)
